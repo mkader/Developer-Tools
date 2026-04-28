@@ -1,6 +1,6 @@
 ### [Cosmos DB Conf Skills Challenge: Build & Optimize Cloud‑Native Apps with Azure Cosmos DB](https://learn.microsoft.com/en-us/collections/o1zmhgt670733j?source=learn)
 
-1. [Build queries for Azure Cosmos DB for NoSQL][https://learn.microsoft.com/en-us/training/modules/build-query-azure-cosmos-db/?source=learn)
+1. [Build queries for Azure Cosmos DB for NoSQL](https://learn.microsoft.com/en-us/training/modules/build-query-azure-cosmos-db/?source=learn)
 2. Implement vector search on Azure Cosmos DB for NoSQL
 3. Optimize query performance for Azure Cosmos DB for NoSQL
 4. Query the Azure Cosmos DB for NoSQL

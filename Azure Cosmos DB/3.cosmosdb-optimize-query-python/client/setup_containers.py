@@ -14,7 +14,7 @@ from azure.identity import DefaultAzureCredential
 
 
 def get_database():
-    """Get a reference to the Cosmos DB database using Entra ID authentication."""
+    """Get a reference to the Cosmos DB database using key or Entra ID authentication."""
     endpoint = os.environ.get("COSMOS_ENDPOINT")
     database_name = os.environ.get("COSMOS_DATABASE")
 
@@ -24,8 +24,12 @@ def get_database():
             "Run 'source .env' (Bash) or '. .\\.env.ps1' (PowerShell) first."
         )
 
-    credential = DefaultAzureCredential()
-    client = CosmosClient(endpoint, credential=credential)
+    cosmos_key = os.environ.get("COSMOS_KEY")
+    if cosmos_key:
+        client = CosmosClient(endpoint, credential=cosmos_key)
+    else:
+        credential = DefaultAzureCredential()
+        client = CosmosClient(endpoint, credential=credential)
     database = client.get_database_client(database_name)
 
     return database

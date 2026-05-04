@@ -11,3 +11,4 @@
 * [Welcome to Azure Cosmos DB Conf 2026](https://devblogs.microsoft.com/cosmosdb/welcome-to-azure-cosmos-db-conf-2026/)
 * [Watch the Azure Cosmos DB Conf 2026 Stream](https://developer.azurecosmosdb.com/conf/#stream)
 
+https://github.com/TuralSuleymani/production-ready-DDD-EDA-Azure
